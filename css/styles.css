@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.897); /* Dark background with some transparency */
+    padding: 10px;
+}
+
+nav h1 {
+    color: white;
+    margin: 0;
+    font-size: 32px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between; /* Distribuye el espacio de manera uniforme */
+}
+
+nav ul li {
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    padding-right: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.search-item {
+    flex-grow: 0.3; /* Permite que el elemento crezca para ocupar el espacio disponible */
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Asegura que el contenedor use todo el ancho disponible */
+    padding: 10px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.searchContainer input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+.searchContainer button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 0 5px 5px 0;
+    background-color: #0c6632;
+    color: white;
+    cursor: pointer;
+}
+
+.searchContainer button:hover {
+    background-color: #095524;
+}
+
+.search-icon {
+    color: #999; 
+    margin-right: 10px;
+    cursor: pointer
+}
+
+nav button + button {
+    margin-left: 5px;
+}
+
+#conditionInput {
+    border: none; 
+    outline: none; 
+    border-radius: 15px;
+    background-color: transparent; 
+    color: #fcf8f8;
+}
+
+
+.search-hidden{
+    visibility: hidden;
+}
+
+  /* Basic CSS for the form elements */
+  body {
+    font-family: Arial, sans-serif;
+    /* margin: 20px; */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    font-size: 5rem;
+  }
+
+.noto-sans-bold {
+  font-family: "Noto Sans", serif;
+  font-optical-sizing: auto;
+  font-weight: 700; /* Peso negrita */
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+
+  .paragrafo{
+    width: 55%;
+    text-align: left;
+    margin-top: 30px;
+    margin-left: 10px;
+    line-height: 1.6;
+  }
+
+  div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    padding: 5px;
+  }
+  
+ .container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.vertical-line {
+    position: absolute;
+    top: 40px; 
+    left: 35px; 
+    width: 3px;
+    height: 200px; 
+    background-color: rgb(250, 248, 248);
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/back.jpeg');
+    z-index: -1;
+    background-size: cover;
+    filter: brightness(0.5); /* Adjust opacity if needed */
+}
+
+.half-content {
+    margin-left: 4rem;
+    position: absolute;
+    padding: 5%;
+    width: 50%;
+    color: white;
+}
+
+.content {
+    position: absolute;
+    margin: 2% 10% 10% 10%;
+    color: white;
+}
+
+.social-icons {
+    position: absolute;
+    left: 2%;
+    bottom: 30%;
+    display: flex;
+    font-size:24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.icon {
+    margin-bottom: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.icon i {
+    margin-right: 10px;
+}
+  
+#btnSearch,
+#btnReset{
+    padding: 5px 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #2ecc71; /* Blue-greenish color */
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#btnBook{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(75, 228, 139, 0.5);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-left: 5px;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.button-popup {
+    padding: 5px 20px;
+    background-color: rgba(46, 160, 204, 0.7);;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 0 3px 3px 5px;
+    width: 25%;
+}
+
+#results {
+    float: right;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 90%;
+    overflow-y: auto;
+}
+
+.result-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.result-item h2 {
+    padding-left: 10px;
+}
+
+.result-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.result-item p {
+    padding: 6px;
+}
+
+.result-item a {
+    padding-left: 10px;
+}
+
+.resultsContainer {
+    float: right;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 90%;
+    overflow-y: auto;
+}
+
+.popup {
+    text-align: justify;
+    width: 30%;
+    
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(249, 249, 249, 0.7);
+    box-shadow: -2px 0 5px rgba(0,0,0,0.1);
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 10px; 
+    height: calc(100% - 60px);
+    overflow-y: auto;          
+}
+
+.thankyou-message {
+            margin-top: 10px;
+            color: green;
+            font-weight: bold;
+        }
+
+
+/* ABOUT-US */
+
+#about-us{
+    text-align: justify;
+    line-height: 1.6;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap; /* Para permitir que los miembros del equipo se adapten mejor en pantallas pequeñas */
+    margin-top: 20px;
+}
+
+.team-member {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo semi oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    width: 250px; /* Ajusta según tus necesidades */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar las tarjetas */
+}
+
+.team-member .icon {
+    position: absolute;
+    top: 1px; /* Ajusta según tus necesidades */
+    left: -20px; /* Ajusta según tus necesidades */
+    height: 40px;
+    width: 40px;
+    font-size: 24px;
+    color: white; /* Ajusta el color según sea necesario */
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.member-info {
+    margin-left: 3px; 
+    text-align: justify;
+    line-height: 1.6;
+}
+
+.member-job{
+    text-align: center;
+    font-weight: 600;
+    background-color: #082b6d;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+#team-title{
+    font-size: 50px;
+}
+
+/* FORM CONTACT */
+
+.content-contact {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    top: 10%;
+    gap: 50px;
+}
+
+form {
+    width: 50%; 
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);        
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: vertical;
+}
+
+#button-contact {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #0c6632;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+

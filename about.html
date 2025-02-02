@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Travel Recommendation</title>
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    <body>
+        
+        <nav>
+       <ul>
+            <li style="display: flex; align-items: center;">
+                <img src="img/travel-logo.png" alt="TravelBloom Logo" style="height: 40px; vertical-align: middle;">
+                <h1>TravelBloom</h1>
+            </li>
+            <li>
+                <a href="./travel_recommendation.html" id="home">Home</a>
+                <a href="./about.html" id="contact">About Us</a>
+                <a href="./contact.html" id="contact">Contact Us</a>
+            </li>
+            <li class="search-item">
+                <div class="searchContainer search-hidden">
+                    <input type="text" id="conditionInput" placeholder="Enter a destination or keyword">
+                    <button id='btnSearch'>Search</button>
+                    <button id='btnReset'>Reset</button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+        
+        <section class="container">
+            <div class="vertical-line"></div>
+            <div class="background-image"></div>
+            <div class="content">
+                <h1>About Us</h1>
+                <p id="about-us"  >Welcome to TravelBloom, your premier travel partner. We are committed to curating exceptional travel adventures uniquely designed to match your desires. Our team of devoted globetrotters is driven by a passion for helping you discover the world's wonders and create cherished memories that endure forever. Explore the world with us and embark on the adventure of a lifetime. Visit our website to discover more about our services and start planning your next journey. Dive into the wonders of TravelBloom and let us help you turn your travel dreams into reality.</p>
+                    <div class="team-container">
+                        <h2 id="team-title" >Our <br> Team</h2>
+                        <div class="team-member">
+                            <div class="icon">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="member-info">
+                                <h3>John Doe</h3>
+                                <p>John is responsible for leading the company, setting strategic goals, and ensuring overall success.</p>
+                                <p class="member-job">CEO</p>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="icon">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="member-info">
+                                <h3>Jane Smith</h3>
+                                <p>Jane is responsible for planning and organizing travel experiences tailored to clients' preferences.</p>
+                                <p class="member-job">Lead Travel Planner</p>
+                            </div>
+                        </div>
+                        <div class="team-member">
+                            <div class="icon">
+                                <i class="fas fa-user-circle"></i>
+                            </div>
+                            <div class="member-info">
+                                <h3>Michael Johnson</h3>
+                                <p>Michael is responsible for developing and implementing marketing strategies. As Marketing Manager, he promotes our brand.</p>
+                                <p class="member-job">Marketing Manager</p>
+                            </div>
+                        </div>
+                    </div>
+   
+            </div>
+            <div class="social-icons">
+            <a href="https://www.twitter.com" class="icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com" class="icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com" class="icon"><i class="fab fa-youtube"></i></a>
+        </div>
+        </section>
+        <script src="./travel_recommendation.js"></script>
+    </body>
+</html>

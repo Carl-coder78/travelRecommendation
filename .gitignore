@@ -1,0 +1,44 @@
+# Ignorar archivos temporales y configuraciones de usuario
+.bash_history
+.cache/
+.conda/
+.config/
+.dbus-keyrings/
+.eclipse/
+.gitconfig
+.ipython/
+.lesshst
+.matplotlib/
+.nbi/
+.node_repl_history
+.p2/
+.pdfbox.cache
+.quokka/
+.sambox.cache
+.spyder-py3/
+.ssh/
+.viminfo
+.yarnrc
+NTUSER.DAT
+NTUSER.DAT*
+ntuser.dat.LOG1
+ntuser.dat.LOG2
+ntuser.ini
+
+# Ignorar directorios personales
+3D Objects/
+AppData/
+Contacts/
+Desktop/
+Downloads/
+Favorites/
+IntelGraphicsProfiles/
+Links/
+Music/
+OneDrive/
+Pictures/
+PycharmProjects/
+Saved Games/
+Searches/
+Videos/
+eclipse-workspace/

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Travel Recommendation</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav>
+       <ul>
+            <li style="display: flex; align-items: center;">
+                <img src="img/travel-logo.png" alt="TravelBloom Logo" style="height: 40px; vertical-align: middle;">
+                <h1>TravelBloom</h1>
+            </li>
+            <li>
+                <a href="./travel_recommendation.html" id="home">Home</a>
+                <a href="./about.html" id="contact">About Us</a>
+                <a href="./contact.html" id="contact">Contact Us</a>
+            </li>
+            <li class="search-item">
+                <div class="searchContainer">
+                    <input type="text" id="conditionInput" placeholder="Enter a destination or keyword">
+                    <i class="fas fa-search search-icon"></i>
+                    <button id='btnSearch'>Search</button>
+                    <button id='btnReset'>Reset</button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+    <section class="container">
+        <div class="popup" id="resultsPopup"></div>
+        <div class="vertical-line"></div>
+        <div class="background-image"></div>
+        <div class="half-content">
+            <h1 class="noto-sans">EXPLORE <br>DREAM DESTINATION</h1>
+            <p class="paragrafo">Embark on a journey to uncover stunning destinations worldwide. Discover tranquil beaches, adventurous mountains, and vibrant cities. Join us in exploring hidden gems and create unforgettable travel memories.</p>
+            <br>
+            <button id='btnBook'>Book now</button>
+        </div>
+        <div id="results"></div>
+        <div class="social-icons">
+            <a href="https://www.twitter.com" class="icon"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com" class="icon"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com" class="icon"><i class="fab fa-youtube"></i></a>
+        </div>
+    </section>
+    
+    <script src="./travel_recommendation.js"></script>
+</body>
+</html>

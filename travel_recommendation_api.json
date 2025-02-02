@@ -1,0 +1,108 @@
+{
+    "countries": [
+        {
+            "id": 1,
+            "name": "Australia",
+            "cities": [
+                {
+                    "name": "Sydney, Australia",
+                    "imageUrl": "img/sydney.jpg",
+                    "description": "A vibrant city known for its iconic landmarks like the Sydney Opera House and Sydney Harbour Bridge.",
+                    "latitude": -33.8688,
+                    "longitude": 151.2093
+                },
+                {
+                    "name": "Melbourne, Australia",
+                    "imageUrl": "img/melbourne.jpg",
+                    "description": "A cultural hub famous for its art, food, and diverse neighborhoods.",
+                    "latitude": -37.8136,
+                    "longitude": 144.9631
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Japan",
+            "cities": [
+                {
+                    "name": "Tokyo, Japan",
+                    "imageUrl": "img/tokyo.jpg",
+                    "description": "A bustling metropolis blending tradition and modernity, famous for its cherry blossoms and rich culture.",
+                    "latitude": 35.6895,
+                    "longitude": 139.6917
+                },
+                {
+                    "name": "Kyoto, Japan",
+                    "imageUrl": "img/kyoto.jpg",
+                    "description": "Known for its historic temples, gardens, and traditional tea houses.",
+                    "latitude": 35.0116,
+                    "longitude": 135.7681
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Brazil",
+            "cities": [
+                {
+                    "name": "Rio de Janeiro, Brazil",
+                    "imageUrl": "img/rio.jpg",
+                    "description": "A lively city known for its stunning beaches, vibrant carnival celebrations, and iconic landmarks.",
+                    "latitude": -22.9068,
+                    "longitude": -43.1729
+                },
+                {
+                    "name": "São Paulo, Brazil",
+                    "imageUrl": "img/sao-paulo.jpg",
+                    "description": "The financial hub with diverse culture, arts, and a vibrant nightlife.",
+                    "latitude": -23.5505,
+                    "longitude": -46.6333
+                }
+            ]
+        }
+    ],
+    "temples": [
+        {
+            "id": 1,
+            "name": "Angkor Wat, Cambodia",
+            "imageUrl": "img/angkor-wat.jpg",
+            "description": "A UNESCO World Heritage site and the largest religious monument in the world.",
+            "latitude": 13.4125,
+            "longitude": 103.866667
+        },
+        {
+            "id": 2,
+            "name": "Taj Mahal, India",
+            "imageUrl": "img/taj-mahal.jpg",
+            "description": "An iconic symbol of love and a masterpiece of Mughal architecture.",
+            "latitude": 27.1751,
+            "longitude": 78.0421
+        }
+    ],
+    "beaches": [
+        {
+            "id": 1,
+            "name": "Cartagena, Colombia",
+            "imageUrl": "img/cartagena.jpg",
+            "description": "A renowned archipelago off the coast of Cartagena, Colombia, known for its vibrant marine life and breathtaking scenery.",
+            "latitude": 10.4000,
+            "longitude": 75.5000
+        },
+        {
+            "id": 2,
+            "name": "Copacabana Beach, Brazil",
+            "imageUrl": "img/copacabana.jpg",
+            "description": "A famous beach in Rio de Janeiro, Brazil, with a vibrant atmosphere and scenic views.",
+            "latitude": -22.9711,
+            "longitude": -43.1822
+        },
+        {
+            "id": 3,
+            "name": "Bora Bora, French Polynesia",
+            "imageUrl": "img/bora-bora.jpg",
+            "description": "An island known for its stunning turquoise waters and luxurious overwater bungalows.",
+            "latitude": -16.5004,
+            "longitude": -151.7415
+        }
+    ]
+}
