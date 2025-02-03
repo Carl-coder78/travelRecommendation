@@ -94,33 +94,30 @@ nav button + button {
     visibility: hidden;
 }
 
-  /* Basic CSS for the form elements */
-  body {
+body {
     font-family: Arial, sans-serif;
-    /* margin: 20px; */
-  }
+}
   
   h1 {
     margin-bottom: 20px;
     font-size: 5rem;
   }
 
-.noto-sans-bold {
-  font-family: "Noto Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: 700; /* Peso negrita */
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-}
-
-
-  .paragrafo{
-    width: 55%;
-    text-align: left;
-    margin-top: 30px;
-    margin-left: 10px;
-    line-height: 1.6;
+  #main-title{
+    display: inline-block; 
+    transform: scaleX(1.2);
+    transform-origin: left;
   }
+
+.paragrafo{
+    font-size: 18px;
+    width: 58%;
+    text-align: justify;
+    margin-top: 20px;
+    margin-left: 10px;
+    line-height: 1.8;
+    background-color: rgba(5, 39, 71, 0.1);
+}
 
   div {
     margin-bottom: 10px;
@@ -318,8 +315,8 @@ label {
     display: flex;
     justify-content: space-around;
     flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap; /* Para permitir que los miembros del equipo se adapten mejor en pantallas pequeñas */
+    align-items: stretch;
+    flex-wrap: wrap; 
     margin-top: 20px;
 }
 
@@ -327,23 +324,23 @@ label {
     display: flex;
     align-items: flex-start;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.1); /* Fondo semi oscuro */
+    background-color: rgba(44, 75, 94, 0.6); 
     padding: 20px;
     border-radius: 10px;
     margin: 10px;
-    width: 250px; /* Ajusta según tus necesidades */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destacar las tarjetas */
+    width: 250px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .team-member .icon {
     position: absolute;
-    top: 1px; /* Ajusta según tus necesidades */
-    left: -20px; /* Ajusta según tus necesidades */
+    top: 1px; 
+    left: -20px; 
     height: 40px;
     width: 40px;
     font-size: 24px;
-    color: white; /* Ajusta el color según sea necesario */
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5); 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -359,7 +356,7 @@ label {
 .member-job{
     text-align: center;
     font-weight: 600;
-    background-color: #082b6d;
+    background-color: #1ea89d;
     padding: 5px;
     border-radius: 10px;
     margin: 5px;

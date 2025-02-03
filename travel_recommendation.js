@@ -167,16 +167,34 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     // Validar el correo electrónico
     const email = document.getElementById('email').value;
     const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const validDomains = ['gmail.com', 'hotmail.com', 'yahoo.com', 'outlook.com', 'aol.com'];
+    const validDomains = [
+        // Dominios globales y populares
+        'gmail.com', 'hotmail.com', 'hotmail.es', 'yahoo.com', 'outlook.com', 'aol.com',
+        'yahoo.es', 'live.com', 'icloud.com', 'protonmail.com', 'mail.com', 'zoho.com',
+        
+        // Suramérica
+        'uol.com.br', 'terra.com.br', 'bol.com.br', 'globomail.com', 'yahoo.com.ar', 'outlook.com.ar', 
+        'hotmail.com.ar', 'live.com.ar', 'gmail.com.ar', 'yahoo.com.br', 'outlook.com.br', 'hotmail.com.br',
+
+        // Europa
+        'orange.fr', 'wanadoo.fr', 'free.fr', 'gmx.de', 'web.de', 't-online.de', 'bluewin.ch',
+        'mail.ru', 'rambler.ru', 'yandex.ru', 'libero.it', 'virgilio.it', 'tiscali.it', 'fastwebnet.it',
+        'alice.it', 'tin.it', 'laposte.net', 'telenet.be', 'skynet.be', 'btinternet.com', 'ntlworld.com',
+        'eircom.net',
+
+        // Asia
+        'naver.com', 'hanmail.net', 'daum.net', 'yahoo.co.jp', 'hotmail.co.jp', 'icloud.co.jp',
+        'live.co.jp', 'gmail.co.jp', 'yahoo.co.in', 'rediffmail.com', 'hotmail.co.in', 'outlook.co.in'
+    ];
 
     if (!emailPattern.test(email)) {
-        alert('Error: Por favor, introduce un correo electrónico válido.');
+        alert('Error: Por favor, introduce un correo electrónico válido. Please enter a valid email address.');
         return; // No enviar el formulario si el correo es inválido
     }
 
     const domain = email.split('@')[1];
     if (!validDomains.includes(domain)) {
-        alert('Error: El dominio de correo electrónico no es válido.');
+        alert('Error: El dominio de correo electrónico no es válido. The email domain is not valid.');
         return; // No enviar el formulario si el dominio es inválido
     }
 
@@ -186,7 +204,3 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     // Limpia los campos del formulario
     document.getElementById('contactForm').reset();
 });
-
-
-
-
