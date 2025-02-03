@@ -83,7 +83,7 @@
         {
             "id": 1,
             "name": "Cartagena, Colombia",
-            "imageUrl": "../img/cartagena.jpg",
+            "imageUrl": "https://i.postimg.cc/6q94xd3R/cartagena.jpg",
             "description": "A renowned archipelago off the coast of Cartagena, Colombia, known for its vibrant marine life and breathtaking scenery.",
             "latitude": 10.4000,
             "longitude": 75.5000
